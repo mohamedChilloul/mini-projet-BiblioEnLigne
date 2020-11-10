@@ -1,0 +1,11 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: route1
+          predicates:
+            - path=/ms-livre-catalogue/**
+          filters:
+            - RewritePath=/ms-livre-catalogue/(?<s>.*), /${s}
+
+          uri: lb://ms-livre-catalogue

@@ -1,0 +1,40 @@
+spring:
+  cloud:
+    gateway:
+      routes:
+        - id: route1
+          predicates:
+            - Path=/ms-catalogue/**
+          filters:
+            - RewritePath=/ms-catalogue/(?<s>.*), /${s}
+            - name: CircuitBreaker
+              args:
+                name: fall-back-ms-catalogue
+                fallbackuri: forward:/defaultCatalogue
+          uri: lb://ms-catalogue
+        - id: route2
+          predicates:
+            - Path=/ms-livre-rating/**
+          filters:
+            - RewritePath=/ms-livre-rating/(?<s>.*), /${s}
+            - name: CircuitBreaker
+              args:
+                name: fall-back-ms-rating
+                fallbackuri: forward:/defaultRating
+          uri: lb://ms-livre-rating
+        - id: route3
+          predicates:
+            - Path=/ms-livre-file/**
+          filters:
+            - RewritePath=/ms-livre-file/(?<s>.*), /${s}
+          uri: lb://ms-livre-file
+        - id: route4
+          predicates:
+            - Path=/ms-livre-search/**
+          filters:
+            - RewritePath=/ms-livre-search/(?<s>.*), /${s}
+            - name: CircuitBreaker
+              args:
+                name: fall-back-ms-search
+                fallbackuri: forward:/defaultSearch
+          uri: lb://ms-livre-search

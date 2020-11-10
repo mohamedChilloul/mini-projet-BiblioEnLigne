@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="ms-config" />
+        <module name="cqrs-command-api" />
+        <module name="cqrs-core-api" />
+        <module name="ms-proxy" />
+        <module name="ms-livre-rating" />
+        <module name="ms-gateway" />
+        <module name="cqrs-quary-api" />
+        <module name="ms-livre-search" />
+        <module name="ms-livre-file" />
+        <module name="ms-regisrty" />
+        <module name="ms-livre-catalogue" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="cqrs-command-api" target="11" />
+      <module name="cqrs-core-api" target="11" />
+      <module name="cqrs-quary-api" target="11" />
+      <module name="ms-config" target="11" />
+      <module name="ms-gateway" target="11" />
+      <module name="ms-livre-catalogue" target="11" />
+      <module name="ms-livre-file" target="11" />
+      <module name="ms-livre-info" target="11" />
+      <module name="ms-livre-rating" target="11" />
+      <module name="ms-livre-search" target="11" />
+      <module name="ms-proxy" target="11" />
+      <module name="ms-regisrty" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="cqrs-command-api" options="-parameters" />
+      <module name="cqrs-core-api" options="-parameters" />
+      <module name="cqrs-quary-api" options="-parameters" />
+      <module name="ms-config" options="-parameters" />
+      <module name="ms-gateway" options="-parameters" />
+      <module name="ms-livre-catalogue" options="-parameters" />
+      <module name="ms-livre-file" options="-parameters" />
+      <module name="ms-livre-info" options="-parameters" />
+      <module name="ms-livre-rating" options="-parameters" />
+      <module name="ms-livre-search" options="-parameters" />
+      <module name="ms-proxy" options="-parameters" />
+      <module name="ms-regisrty" options="-parameters" />
+    </option>
+  </component>
+</project>

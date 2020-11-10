@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/cqrs-command-api/cqrs-command-api.iml" filepath="$PROJECT_DIR$/cqrs-command-api/cqrs-command-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cqrs-core-api/cqrs-core-api.iml" filepath="$PROJECT_DIR$/cqrs-core-api/cqrs-core-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/cqrs-quary-api/cqrs-quary-api.iml" filepath="$PROJECT_DIR$/cqrs-quary-api/cqrs-quary-api.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-config/ms-config.iml" filepath="$PROJECT_DIR$/ms-config/ms-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-gateway/ms-gateway.iml" filepath="$PROJECT_DIR$/ms-gateway/ms-gateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-livre-catalogue/ms-livre-catalogue.iml" filepath="$PROJECT_DIR$/ms-livre-catalogue/ms-livre-catalogue.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-livre-file/ms-livre-file.iml" filepath="$PROJECT_DIR$/ms-livre-file/ms-livre-file.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-livre-rating/ms-livre-rating.iml" filepath="$PROJECT_DIR$/ms-livre-rating/ms-livre-rating.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-livre-search/ms-livre-search.iml" filepath="$PROJECT_DIR$/ms-livre-search/ms-livre-search.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ms-regisrty/ms-regisrty.iml" filepath="$PROJECT_DIR$/ms-regisrty/ms-regisrty.iml" />
+    </modules>
+  </component>
+</project>
